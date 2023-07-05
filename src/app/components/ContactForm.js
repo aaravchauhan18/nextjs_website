@@ -3,6 +3,7 @@
 import styles from "@/app/contact/contact.module.css"
 import {Mulish} from "next/font/google";
 import {useState} from "react";
+
 const mulish = Mulish({
     subsets: ['latin'],
     display: 'swap',
@@ -63,7 +64,7 @@ const ContactForm = () => {
 
 
     return (
-        <form className={styles.contact_form} onSubmit={handleSubmit}>
+        <form className={styles.contact_form} action={"https://formspree.io/f/maygywoo"} method={"POST"}>
             <div className={styles.input_field}>
                 <label htmlFor="username" className={styles.label}>
                     Enter your name
